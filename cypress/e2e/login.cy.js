@@ -3,7 +3,7 @@
 context('Funcionalidade Login', () =>{
 
     beforeEach(() => {
-        cy.visit('minha-conta/')
+        cy.visit('minha-conta')
         })
 
     afterEach(()=>{
