@@ -1,7 +1,9 @@
 module.exports = {
   e2e: {
-    setupNodeEvents(on, config) {
+    
+      baseUrl : 'http://lojaebac.ebaconline.art.br/'  
+      
       // implement node event listeners here
-    },
+    
   },
 };
