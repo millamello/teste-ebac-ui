@@ -8,11 +8,11 @@ describe('Funcionalidade Pré Cadatro', () => {
         })
 
     it('Deve completar o pré cadastro com sucesso', () => {
-        var emailfaker = faker.internet.email()
-        var nomeFaker = faker.name.firstName()
-        var sobrenomeFaker = faker.name.lastName()
+        let emailFaker = faker.internet.email()
+        let nomeFaker = faker.name.firstName()
+        let sobrenomeFaker = faker.name.lastName()
         
-        cy.get('#reg_email').type(emailfaker)
+        cy.get('#reg_email').type(emailFaker)
         cy.get('#reg_password').type('@Teste2026')
         cy.get(':nth-child(4) > .button').click ()
 
@@ -23,7 +23,7 @@ describe('Funcionalidade Pré Cadatro', () => {
 
         cy.get('.woocommerce-message').should('contain' , 'Detalhes da conta modificados com sucesso')
 
-    })
+    });
     
 
 
